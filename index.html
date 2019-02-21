@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="meta" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="home.css" >
+
+    <title>Home</title>
+    <link href="logo.png">
+</head>
+<body>
+    <!--login section-->
+    <div id="sec1">
+        <table>
+            <tr  height="45px"></tr>
+            <tr height="154px" >
+                <td width="60px"></td>
+                <td width="324px"><img  src="zing.png" alt="logo" height="154px" width="324px"></td>
+                <td width="1500px"></td>
+                <td width="1500px"></td>
+                <td width="1500px"></td>
+                <td width="1000px"></td>
+                <td><img  src="user.png" alt="logo" height="100px" width="100px"></td>
+                <td width="1200px">
+                    <h3>User Name</h3>
+                    <h3>Logout</h3>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!--navigation bar-->
+    <nav id="nav1">
+        <table>
+            <td>
+                <tr><a href="index.html" class="b"><b>Home</b></a></tr>
+                <tr><a href="AboutZING.html" class="b"><b>About Us</b></a></tr>
+                <tr><a href="login_2.html" class="b"><b>Themes</b></a></tr>
+                <tr><a href="login_2.html" class="b"><b>Add-ons</b></a></tr>
+                <tr><a href="login_2.html" class="b"><b>Order</b></a></tr>
+                <tr><a href="Contact.html" class="b"><b>Contact Us</b></a></tr>
+            </td>
+        </table>
+
+
+    </nav>
+
+    <!--photos-->
+    <div id="sec11">
+
+    </div>
+
+    <div>
+
+        <!-- main part-->
+        <section id="sec2">
+
+            <!--wellcome -->
+            <table >
+                <tr height="50px"></tr>
+                <tr>
+                    <td width="375px"></td>
+                    <td><img src="wel.png" width="500px " height="200px"></td>
+                </tr>
+            </table>
+
+            <!--videos-->
+            <table>
+                <tr height="20px"></tr>
+                <tr>
+                    <td width="40px"></td>
+                    <td><video width="250px" controls autoplay muted><source src="v1.mp4" type="video/mp4" ></video></td>
+                    <td width="50px"></td>
+                    <td><video width="250px" controls autoplay muted><source src="v2.mp4" type="video/mp4" ></video></td>
+                    <td width="50px"></td>
+                    <td><video width="250px" controls autoplay muted><source src="v3.mp4" type="video/mp4" ></video></td>
+                    <td width="50px"></td>
+                    <td><video width="250px" controls autoplay muted><source src="v4.mp4" type="video/mp4" ></video></td>
+                </tr>
+            </table>
+
+            <!--search-->
+            <table >
+                <tr height="50px"></tr>
+                <tr>
+                    <td>
+                        <form action="search.php">
+                            <input type="text" placeholder="  search...package, add-ons " maxlength="100px" id="search" />
+                            <input type="submit" value="search" id="submit" />
+                        </form>
+                    </td>
+                </tr>
+            </table>
+
+            <!--quote1-->
+            <table >
+                <tr height="30px"></tr>
+                <tr>
+                    <td width="420px"></td>
+                    <td><h1><i>"The easiest way to plan your wedding"</i></h1></td>
+                </tr>
+            </table>
+
+            <!--best user comment-->
+            <table>
+
+                <tr>
+                    <td width="475px"></td>
+                    <td align="center"><p  style="font-family: French Script MT" , font-size="200px">
+                        "When I first started my wedding planning, I had no idea <br/>
+                        where to begin! But by using Bridebook I have been able to <br/>
+                        search for all of my suppliers, as well as organise my <br/>
+                        guestlist, checklist and budget. I now feel so much more <br/>
+                        relaxed about the wedding!"
+                    </p></td>
+                </tr>
+            </table>
+
+            <!-- user comment-->
+            <table>
+                <tr>
+                    <td  width="550px" ></td>
+                    <td><img src="p.png">Ammali Kumar</td>
+                </tr>
+            </table>
+
+            <!--advertisement-->
+            <div id="sec6" >
+                <img class="slids" src="a1.jpg"/>
+                <img class="slids" src="a2.png"/>
+                <img class="slids" src="a3.jpg"/>
+                <img class="slids" src="a4.jpg"/>
+                <img class="slids" src="a5.jpg"/>
+                <img class="slids" src="a6.jpg"/>
+                <img class="slids" src="a7.jpg"/>
+                <img class="slids" src="a8.jpg"/>
+                <img class="slids" src="a9.jpg"/>
+                <img class="slids" src="a10.png"/>
+            </div>
+            <!--script for sliding advertisement-->
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("slids");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}
+                    x[myIndex-1].style.display = "block";
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+            </script>
+
+            <!--quote2-->
+            <div id="sec7" >
+                <p align="center" >Planning a wedding is no easy task. First step: settle on a budget, then get started on planning with our tools, tips and articles to help you every step of the way. We <br/>
+                    have advice for finding the perfect venue, hiring a photographer, settling on a wedding style, shopping for your dream gown, finalizing your guest list, determining <br/>
+                    catering and bar costs, and a host of other details. Start your wedding planning here! </p>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- Follow Au -->
+    <div id="sec4">
+        <table>
+
+            <tr>
+                <td width="250px"></td>
+                <td> <h1>Follow As</h1> </td>
+                <td width="50px"></td>
+                <td><img src="f.png" height="50px" width="50px"></td>
+                <td width="50px"></td>
+                <td><img src="v.png" height="50px" width="50px"></td>
+                <td width="50px"></td>
+                <td><img src="w.png" height="50px" width="50px"></td>
+                <td width="50px"></td>
+                <td><img src="t.png" height="50px" width="50px"></td>
+                <td width="50px"></td>
+                <td><img src="g.png" height="50px" width="50px"></td>
+            </tr>
+        </table>
+    </div>
+
+    <!--coppy right & email -->
+    <footer id="footer">
+        <h4 align="center" style="padding-top: 9px">© 2017 Zing.com. All rights reserved | zingweddingplanners@gmail.com</h4>
+    </footer>
+</body>
+</html>

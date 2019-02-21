@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="meta" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="GroupProject.css" >
+    <title>Ceremonial Themed Wedding</title>
+
+    <style>
+        #adv {
+            height: 600px;
+            width: 250px;
+        }
+
+        .slids {
+            display: none;
+            height: 600px;
+            width: 250px;
+        }
+
+        .h{
+            color:grey;
+            margin-left: 400px;
+            font-size: 50px;
+            font-family: "Times New Roman";
+        }
+
+        .sh{
+            color:grey;
+            margin-left: 120px;
+            font-size: 30px;
+            font-family: "Times New Roman";
+        }
+
+        .next{
+            background-color: purple;
+            color: white;
+            font-size: 20px;
+            margin-right: 25px;
+        }
+    </style>
+
+</head>
+<body>
+<div id="sec1">
+    <table>
+        <tr  height="45px"></tr>
+        <tr height="154px" >
+            <td width="60px"></td>
+            <td width="324px"><img  src="img4.jpg" alt="logo" height="154px" width="324px"></td>
+            <td width="1500px"></td>
+            <td width="1500px"></td>
+            <td width="1500px"></td>
+            <td width="1000px"></td>
+            <td><img  src="user.png" alt="logo" height="100px" width="100px"></td>
+            <td width="1200px">
+                <h3>User Name</h3>
+                <h3>Logout</h3>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div>
+
+    <!--navigation bar-->
+    <nav id="nav1">
+        <table>
+            <td>
+                <tr><button class="b"> <a href="#"><b>Home</b></a> </button></tr>
+                <tr><button class="b"> <a href="#"><b>About Us</b></a> </button></tr>
+                <tr><button class="b"> <a href="#"><b>Themes</b></a> </button></tr>
+                <tr><button class="b"> <a href="#"><b>Add-ons</b></a> </button></tr>
+                <tr> <button class="b"> <a href="#"><b>Order</b></a> </button></tr>
+                <tr> <button class="b"> <a href="#"><b>Contact Us</b></a> </button></tr>
+            </td>
+        </table>
+    </nav>
+
+    <!-- aside-->
+    <aside id="sec2">
+        <div>
+            <br><br>
+
+            <a href="GroupProject.html"><h3 style="margin-left: 30px"><b>Packages</b></h3></a>
+
+            <table align="center">
+                <tr>
+                    <td><a href="#" >Bridal Dress</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="#">Groom's Attire</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="#">Venue</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="#">Cake</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="#">Floral Decorations</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="#">Jewellery</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="#">Rings</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="#">Catering</a></td>
+                </tr>
+
+            </table>
+
+
+            <br><br>
+
+            <table>
+                <tr>
+                    <a href="proceedToAddons.html"><h3 style="margin-left: 30px"><b>Add-Ons</b></h3></a>
+                </tr>
+            </table>
+        </div>
+
+        <br/><br/>
+
+        <div id="adv">
+            <img class="slids" src="adv1.jpg"/>
+            <img class="slids" src="adv2.jpg"/>
+            <img class="slids" src="adv3.gif"/>
+            <img class="slids" src="adv4.jpg"/>
+            <img class="slids" src="adv5.jpg"/>
+            <img class="slids" src="adv6.gif"/>
+            <img class="slids" src="adv7.jpg"/>
+        </div>
+        <!--script for sliding advertisement-->
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("slids");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+
+        <div id="vedio">
+            <table>
+                <tr height="20px"></tr>
+                <tr height="40px">
+                    <td><video width="250px" controls autoplay muted><source src="adv1.mp4" type="video/mp4" ></video></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </aside>
+
+    <section id="sec5"></section>
+
+    <!-- main part -->
+
+    <section id="sec3">
+        <br>
+        <p class="h"> Ceremonial </p>
+        <p class="sh">Cake</p>
+
+        <table align="center" cellspacing="30px">
+            <tr>
+                <td height="250" width="250"><button class="c"><img src="cc3.jpg" width="200" height="200"></button></td>
+                <td height="250" width="250"><button class="c"><img src="cc2.jpg" width="200" height="200"></button></td>
+                <td height="250" width="250"><button class="c"><img src="cc1.jpg" width="200" height="200"></button></td>
+            </tr>
+
+            <tr>
+                <td align="center"><input type="radio" value="Cake1" name="Cake" required><b style="font-size: 25px">Cake 1</b></td>
+                <td align="center"><input type="radio" value="Cake2" name="Cake" required><b style="font-size: 25px">Cake 2</b></td>
+                <td align="center"><input type="radio" value="Cake3" name="Cake" required><b style="font-size: 25px">Cake 3</b></td>
+            </tr>
+        </table>
+
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <form method="get" action="ceremonial-floral.html">
+            <table align="center">
+                <tr>
+                    <td>
+                        <input type="submit" class="next" value="Next">
+                    </td>
+
+                </tr>
+            </table>
+        </form>
+    </section>
+
+</div>
+
+
+
+<!-- Follow Au -->
+<div id="sec4">
+    <table>
+
+        <tr>
+            <td width="250px"></td>
+            <td> <h1>Follow Us</h1> </td>
+            <td width="50px"></td>
+            <td><img src="f.png" height="50px" width="50px"></td>
+            <td width="50px"></td>
+            <td><img src="v.jpg" height="50px" width="50px"></td>
+            <td width="50px"></td>
+            <td><img src="w.png" height="90px" width="90px"></td>
+            <td width="50px"></td>
+            <td><img src="t.png" height="50px" width="50px"></td>
+            <td width="50px"></td>
+            <td><img src="g.png" height="50px" width="50px"></td>
+        </tr>
+    </table>
+</div>
+
+<!--coppy right & email -->
+<footer id="footer">
+    <h4 align="center" style="padding-top: 9px">© 2017 Zing.com. All rights reserved | zingweddingplanners@gmail.com</h4>
+</footer>
+</body>
+</html>

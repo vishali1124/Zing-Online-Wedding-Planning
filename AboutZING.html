@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="meta" content="width=device-width, initial-scale=1.0" >
+    <title>About Zing</title>
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    <link rel="stylesheet" type="text/css" href="txt.css">
+    <link rel="shortcut icon" href="logo.png" alt="logo">
+</head>
+<body>
+
+
+<div id="sec1">
+    <table>
+        <tr  height="45px"></tr>
+        <tr height="154px" >
+            <td width="60px"></td>
+            <td width="324px"><img  src="zing.png" alt="logo" height="154px" width="324px"></td>
+            <td width="1500px"></td>
+            <td width="1500px"></td>
+            <td width="1500px"></td>
+            <td width="1000px"></td>
+            <td><img  src="user.png" alt="logo" height="100px" width="100px"></td>
+            <td width="1200px">
+                <h3>dil_perera</h3>
+                <h3><a href="index.php">Logout</a></h3>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div>
+
+    <!--navigation bar-->
+    <nav id="nav1">
+        <table>
+            <td>
+                <tr><a href="index.html" class="b"><b>Home</b></a></tr>
+                <tr><a href="AboutZING.html" class="b"><b>About Us</b></a></tr>
+                <tr><a href="login_2.html" class="b"><b>Themes</b></a></tr>
+                <tr><a href="login_2.html" class="b"><b>Add-ons</b></a></tr>
+                <tr><a href="login_2.html" class="b"><b>Order</b></a></tr>
+                <tr><a href="Contact.html" class="b"><b>Contact Us</b></a></tr>
+            </td>
+        </table>
+
+
+    </nav>
+
+    <!-- This part for your use -->
+    <aside id="sec2">
+        <br/>
+
+
+
+</aside>
+
+    <section id="sec5"></section>
+
+    <!-- This part for your use -->
+    <section id="sec3">
+        <br>
+        <br>
+
+
+        <div class="AbtZing">
+            <div class="top-border left"></div>
+            <div class="top-border right"></div>
+            <h1>ABOUT ZING</h1>
+            <p>"A quality that makes something interesting & exciting."<br/><br/>
+                Our matrimonial company is one of the leading providers of online <br/>
+                Wedding planning services in Sri Lanka through its websites, mobile<br/>
+                sites and mobile apps.<br/>
+                It has been ranked as Sri Lanka's most trusted online wedding planers brand by <br/>
+                The Brand Trust Report. </p>
+            <a href="Contact.html">Further Inquiries >>>></a>
+        </div>
+
+        <div>
+            <h1 align="center">Gallery</h1>
+
+            <img class="slides" src="wed1.jpg"/>
+            <img class="slides" src="wed3.jpg"/>
+            <img class="slides" src="wed4.jpg"/>
+            <img class="slides" src="cul2.jpg"/>
+            <img class="slides" src="cul7.jpg"/>
+            <img class="slides" src="wed11.jpg"/>
+            <img class="slides" src="wed6.jpg"/>
+            <img class="slides" src="cul5.jpg"/>
+            <img class="slides" src="cul8.jpg"/>
+            <img class="slides" src="cul9.jpg"/>
+        </div>
+
+        <!--script for sliding Gallery-->
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("slides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <div align="center">
+            <br/><br/><br/><br/><br/><br/><br/><br/>
+            <a href="Terms&Condition.html">Terms & condition</a> | <a href="PrivacyPolicy.html">Privacy Policy</a>
+        </div>
+    </section>
+</div>
+
+<!-- Follow Us -->
+<div id="sec4">
+
+    <table>
+        <tr>
+            <td width="250px"></td>
+            <td> <h1>Follow Us</h1> </td>
+
+            <td width="50px"></td>
+            <td><img src="f.png" height="50px" width="50px"></td>
+
+            <td width="50px"></td>
+            <td><img src="v.png" height="50px" width="50px"></td>
+
+            <td width="50px"></td>
+            <td><img src="w.png" height="50px" width="50px"></td>
+
+            <td width="50px"></td>
+            <td><img src="t.png" height="50px" width="50px"></td>
+
+            <td width="50px"></td>
+            <td><img src="g.png" height="50px" width="50px"></td>
+        </tr>
+    </table>
+
+</div>
+
+<!--copy rights & email -->
+<footer id="footer">
+    <h4 align="center" style="padding-top: 9px">© 2017 Zing.com. All rights reserved | zingweddingplanners@gmail.com</h4>
+</footer>
+
+</body>
+</html>
